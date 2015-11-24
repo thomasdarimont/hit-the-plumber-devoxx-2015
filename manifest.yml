@@ -1,0 +1,9 @@
+applications:
+- name: tdlabs-keycloak-test
+  memory: 256M
+  # Add your name/initials to make the hostname unique
+  host: tdlabs-hit-it
+  # Currently defaults to PWS
+  domain: cfapps.io
+  buildpack: https://github.com/thomasdarimont/java-buildpack.git
+  path: target/devoxx-2015-fat.jar
